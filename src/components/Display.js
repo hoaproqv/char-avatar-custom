@@ -42,6 +42,9 @@ const randomAvatar = () => ({
     Math.random() * tagTypeNumber.mouths,
   )}.png`,
   noses: `./media/character/face/noses/1.png`,
+  neckwear: `./media/character/accessories/neckwear/${Math.ceil(
+    Math.random() * tagTypeNumber.neckwear,
+  )}.png`,
   beard: `./media/character/face/beard/${Math.ceil(
     Math.random() * tagTypeNumber.beard,
   )}.png`,
@@ -56,9 +59,6 @@ const randomAvatar = () => ({
   )}.png`,
   hats: `./media/character/accessories/hats/${Math.ceil(
     Math.random() * tagTypeNumber.hats,
-  )}.png`,
-  neckwear: `./media/character/accessories/neckwear/${Math.ceil(
-    Math.random() * tagTypeNumber.neckwear,
   )}.png`,
 });
 function Display({ path, tagType, setTagType, tag, typeList, setPath }) {
