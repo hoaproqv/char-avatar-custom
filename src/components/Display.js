@@ -45,11 +45,11 @@ const randomAvatar = () => ({
   neckwear: `./media/character/accessories/neckwear/${Math.ceil(
     Math.random() * tagTypeNumber.neckwear,
   )}.png`,
-  beard: `./media/character/face/beard/${Math.ceil(
-    Math.random() * tagTypeNumber.beard,
-  )}.png`,
   hair: `./media/character/body/hair/${Math.ceil(
     Math.random() * tagTypeNumber.hair,
+  )}.png`,
+  beard: `./media/character/face/beard/${Math.ceil(
+    Math.random() * tagTypeNumber.beard,
   )}.png`,
   earrings: `./media/character/accessories/earrings/${Math.ceil(
     Math.random() * tagTypeNumber.earrings,
