@@ -94,12 +94,14 @@ body {
   color: #304553;
   background-color: #fff;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn img {
-  width: 30px;
-  height: 30px;
-  padding-top: 3px;
+  width: 70%;
+  height: 70%;
 }
 
 .btn:hover {
@@ -258,14 +260,14 @@ li {
     max-width: 252px;
     max-height: 270px;
   }
-  #type-select{
+  #type-select {
     font-size: 18px;
   }
-  .btn{
+  .btn {
     width: 40px;
     height: 40px;
   }
-  .image{
+  .image {
     max-width: 200px;
     max-height: 200px;
   }
@@ -281,10 +283,4 @@ li {
     max-width: 80px;
     font-size: 13px;
   }
-  .btn img {
-    height: 20px;
-    margin-top: 5px;
-    width: 20px;
-  }
 }
-
