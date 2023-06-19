@@ -281,5 +281,10 @@ li {
     max-width: 80px;
     font-size: 13px;
   }
+  .btn img {
+    height: 20px;
+    margin-top: 5px;
+    width: 20px;
+  }
 }
 
