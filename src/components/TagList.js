@@ -1,10 +1,18 @@
-import React, {useEffect} from "react";
+import React from "react";
+export const typeList = {
+  body: ["skin", "hair"],
+  face: ["beard", "eyebrows", "eyes", "mouths"],
+  clothes: ["layer_1", "layer_2", "layer_3"],
+  accessories: ["earrings", "glasses", "hats", "neckwear"],
+};
 
-function TagList({ setTag, setTagType, typeList, tag, tagType, setPath }) {
+
+function TagList({ setPath }) {
   const handleClickTag = (e) => {
     const target = e.target;
     const tagChange = target.innerHTML;
-    setTag(tagChange);
+    const path = `${tagChange}/${typeList[`${tagChange}`][0]}`;
+    setPath(path);
     const listChildren = target.parentNode.children;
     for (let i = 0; i < listChildren.length; i++) {
       listChildren[i].className = "tag";
@@ -14,11 +22,6 @@ function TagList({ setTag, setTagType, typeList, tag, tagType, setPath }) {
     }
   };
 
-  useEffect(() => {
-    setTagType(typeList[`${tag}`][0]);
-    setPath(`${tag}/${tagType}`);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[tag])
   return (
     <div id="tag-list">
       <div

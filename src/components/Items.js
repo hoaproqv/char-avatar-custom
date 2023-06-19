@@ -6,7 +6,7 @@ function Items({ path, numberType, setSource }) {
         setSource(link)
     }
   const result = [];
-  for (var i = 1; i < numberType + 1; i++) {
+  for (let i = 1; i < numberType + 1; i++) {
     result.push(
       <li key={i}>
         <button className="item" onClick={(e)=>{handleBtnItem(e)}}>
